@@ -1,5 +1,6 @@
 <template>
     <div>
+        <headebar></headebar>
         <h1 class="main-center"> We need introduction here</h1>
         <section class="main-logo main-center">
             <img src="https://cli.vuejs.org/favicon.png" alt="">
@@ -23,7 +24,11 @@
     </div>
 </template>
 <script>
-export default {};
+export default {
+  components: {
+    headebar: () => import("@/components/common/HeaderNav/index.vue")
+  }
+};
 </script>
 <style lang="scss" scoped>
 .main-center {

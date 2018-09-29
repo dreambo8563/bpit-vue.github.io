@@ -1,10 +1,12 @@
 <template>
     <el-container>
-        <el-aside width="200px">
-            <navbar></navbar>
-        </el-aside>
+        <el-header>
+            <headebar></headebar>
+        </el-header>
         <el-container>
-            <el-header>Header</el-header>
+            <el-aside width="200px">
+                <navbar></navbar>
+            </el-aside>
             <el-main>
                 <router-view></router-view>
             </el-main>
@@ -14,7 +16,8 @@
 <script>
 export default {
   components: {
-    navbar: () => import("../components/common/Navbar/index.vue")
+    navbar: () => import("@/components/common/Navbar/index.vue"),
+    headebar: () => import("@/components/common/HeaderNav/index.vue")
   }
 };
 </script>

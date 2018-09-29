@@ -7,6 +7,7 @@ const router = new Router({
   // mode: "history",
   routes: [
     { path: "/", component: () => import("@/views/index.vue") },
+    { path: "/install", component: () => import("@/views/install/index.vue") },
     {
       path: "/components",
       component: () => import("@/layout/index.vue"),
