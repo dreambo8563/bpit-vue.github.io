@@ -10,6 +10,9 @@
           <el-menu-item @click="nav('/components/fab')" index="/components/fab">
             <span slot="title">FAB</span>
           </el-menu-item>
+          <el-menu-item @click="nav('/components/gradientbutton')" index="/components/gradientbutton">
+            <span slot="title">GradientButton</span>
+          </el-menu-item>
         </el-menu>
       </el-col>
     </el-row>

@@ -146,3 +146,12 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   padding: 0;
 }
+
+.demo-container {
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

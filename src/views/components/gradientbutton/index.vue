@@ -1,34 +1,39 @@
 
 <template>
-  <div class="flockbutton-page">
+  <div class="gradientbutton-page">
     <div>
       <pre class="code-container language-javascript">
           <code>
-                import { FlockButton } from "@bpit/vue";
+                import { GradientButton } from "@bpit/vue";
           </code>
         </pre>
     </div>
+    <br>
     <el-row class="demo-container">
-      <FlockButton>Submit</FlockButton>
-      <FlockButton :disabled="true">Submit</FlockButton>
-      <FlockButton type="secondary">Submit</FlockButton>
-      <FlockButton type="destructive">Submit</FlockButton>
-      <FlockButton :invert="true">Submit</FlockButton>
-      <FlockButton :loading="true">Submit</FlockButton>
-      <FlockButton size="half">Submit</FlockButton>
-      <FlockButton size="full">Submit</FlockButton>
+      <GradientButton>Submit</GradientButton>
+      <GradientButton :disabled="true">Submit</GradientButton>
+      <GradientButton type="1">Submit</GradientButton>
+      <GradientButton type="2">Submit</GradientButton>
+      <GradientButton type="3">Submit</GradientButton>
+      <GradientButton type="4">Submit</GradientButton>
+      <GradientButton type="5">Submit</GradientButton>
+      <GradientButton type="6">Submit</GradientButton>
+      <GradientButton type="7">Submit</GradientButton>
+      <GradientButton type="8">Submit</GradientButton>
+      <GradientButton @click="log" type="9">Submit</GradientButton>
     </el-row>
-    <el-collapse v-model="activeNames">
-      <el-collapse-item title="Show Code" name="1">
+    <br>
+    <el-collapse>
+      <el-collapse-item title="Show Code">
         <pre class="code-container language-markup">
           <code>
-            {{code}}
+            {{tpl}}
           </code>
         </pre>
       </el-collapse-item>
     </el-collapse>
     <br>
-    <h2> FlockButton 属性:</h2>
+    <h2> GradientButton 属性:</h2>
     <el-table :data="tableData" style="width: 100%">
       <el-table-column prop="name" label="参数">
       </el-table-column>
@@ -43,7 +48,7 @@
     </el-table>
 
     <br>
-    <h2> FlockButton 事件:</h2>
+    <h2> GradientButton 事件:</h2>
     <el-table :data="tableData2" style="width: 100%">
       <el-table-column prop="name" label="参数">
       </el-table-column>
@@ -57,16 +62,13 @@
       </el-table-column>
     </el-table>
   </div>
-
 </template>
 <script>
 import Prism from "prismjs";
-import { FlockButton } from "@bpit/vue";
-
+import { GradientButton } from "@bpit/vue";
 export default {
   data() {
     return {
-      activeNames: [],
       tableData: [
         {
           name: "disabled",
@@ -77,31 +79,10 @@ export default {
         },
         {
           name: "type",
-          desc: "内置类型",
+          desc: "过渡颜色枚举",
           type: "string",
-          values: "primary/secondary/destructive",
-          default: "primary"
-        },
-        {
-          name: "invert",
-          desc: "是否反色",
-          type: "Boolean",
-          values: "true/false",
-          default: "false"
-        },
-        {
-          name: "size",
-          desc: "尺寸",
-          type: "string",
-          values: "half/full",
-          default: "-"
-        },
-        {
-          name: "loading",
-          desc: "是否加载中状态",
-          type: "Boolean",
-          values: "true/false",
-          default: "false"
+          values: "1-9",
+          default: "1"
         }
       ],
       tableData2: [
@@ -113,24 +94,33 @@ export default {
           default: "-"
         }
       ],
-      code: `
-    <FlockButton>Submit</FlockButton>
-    <FlockButton :disabled="true">Submit</FlockButton>
-    <FlockButton type="secondary">Submit</FlockButton>
-    <FlockButton type="destructive">Submit</FlockButton>
-    <FlockButton :invert="true">Submit</FlockButton>
-    <FlockButton :loading="true">Submit</FlockButton>
-    <FlockButton size="half">Submit</FlockButton>
-    <FlockButton size="full">Submit</FlockButton>`
+      tpl: `
+      <GradientButton>Submit</GradientButton>
+      <GradientButton :disabled="true">Submit</GradientButton>
+      <GradientButton type="1">Submit</GradientButton>
+      <GradientButton type="2">Submit</GradientButton>
+      <GradientButton type="3">Submit</GradientButton>
+      <GradientButton type="4">Submit</GradientButton>
+      <GradientButton type="5">Submit</GradientButton>
+      <GradientButton type="6">Submit</GradientButton>
+      <GradientButton type="7">Submit</GradientButton>
+      <GradientButton type="8">Submit</GradientButton>
+      <GradientButton type="9">Submit</GradientButton>
+      `
     };
   },
   components: {
-    FlockButton
+    GradientButton
   },
   mounted() {
     Prism.highlightAll();
+  },
+  methods: {
+    log() {
+      console.log("log");
+    }
   }
 };
 </script>
-<style lang="scss" scoped>
+<style scoped>
 </style>

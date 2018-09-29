@@ -23,6 +23,12 @@ const router = new Router({
           components: {
             default: () => import("@/views/components/fab/index.vue")
           }
+        },
+        {
+          path: "gradientbutton",
+          components: {
+            default: () => import("@/views/components/gradientbutton/index.vue")
+          }
         }
       ]
     },
