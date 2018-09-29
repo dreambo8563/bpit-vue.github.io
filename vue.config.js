@@ -2,7 +2,7 @@ const path = require("path");
 const projectRoot = path.resolve(__dirname);
 module.exports = {
   // lintOnSave: false,
-  baseUrl: process.env.NODE_ENV === "production" ? "/bpit-vue.github.io/" : "/",
+  baseUrl: process.env.NODE_ENV === "production" ? "/bpit-vue/" : "/",
   devServer: {
     // proxy: "http://localhost:1234"
   },
