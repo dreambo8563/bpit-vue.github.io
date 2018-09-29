@@ -4,6 +4,8 @@ import router from "./router";
 import "@assets/css/common.scss";
 import Element from "element-ui";
 import "core-js/fn/promise";
+// import "@assets/prism.css";
+// import "@assets/prism.js";
 
 Vue.use(Element);
 Vue.config.productionTip = false;

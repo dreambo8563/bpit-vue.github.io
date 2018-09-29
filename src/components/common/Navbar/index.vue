@@ -7,14 +7,8 @@
           <el-menu-item @click="nav('/components/flockbutton')" index="1">
             <span slot="title">FlockButton</span>
           </el-menu-item>
-          <el-menu-item index="2">
-            <span slot="title">导航二</span>
-          </el-menu-item>
-          <el-menu-item index="3">
-            <span slot="title">导航三</span>
-          </el-menu-item>
-          <el-menu-item index="4">
-            <span slot="title">导航四</span>
+          <el-menu-item @click="nav('/components/fab')" index="2">
+            <span slot="title">FAB</span>
           </el-menu-item>
         </el-menu>
       </el-col>

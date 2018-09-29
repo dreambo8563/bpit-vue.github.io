@@ -11,14 +11,16 @@ const router = new Router({
       path: "/components",
       component: () => import("@/layout/index.vue"),
       children: [
-        // {
-        //   path: "/components",
-        //   component: () => import("./views/components/index.vue")
-        // },
         {
           path: "flockbutton",
           components: {
             default: () => import("@/views/components/flockbutton/index.vue")
+          }
+        },
+        {
+          path: "fab",
+          components: {
+            default: () => import("@/views/components/fab/index.vue")
           }
         }
       ]

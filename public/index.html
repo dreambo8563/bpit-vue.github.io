@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="prism.css" />
+  <script src="prismjs"></script> -->
   <style>
     body {
       background: #f4b267;
@@ -20,7 +22,7 @@
       display: none
     }
 
-    .loaders-container {
+    .index-loaders-container {
       position: fixed;
       z-index: -1;
       height: 100%;
@@ -35,7 +37,7 @@
       font-family: Helvetica;
     }
 
-    .loader {
+    .index-loader {
       height: 20px;
       width: 250px;
       position: absolute;
@@ -46,7 +48,7 @@
       margin: auto;
     }
 
-    .loader--dot {
+    .index-loader--dot {
       animation-name: loader;
       animation-timing-function: ease-in-out;
       animation-duration: 3s;
@@ -59,37 +61,37 @@
       border: 2px solid white;
     }
 
-    .loader--dot:first-child {
+    .index-loader--dot:first-child {
       background-color: #8cc759;
       animation-delay: 0.5s;
     }
 
-    .loader--dot:nth-child(2) {
+    .index-loader--dot:nth-child(2) {
       background-color: #8c6daf;
       animation-delay: 0.4s;
     }
 
-    .loader--dot:nth-child(3) {
+    .index-loader--dot:nth-child(3) {
       background-color: #ef5d74;
       animation-delay: 0.3s;
     }
 
-    .loader--dot:nth-child(4) {
+    .index-loader--dot:nth-child(4) {
       background-color: #f9a74b;
       animation-delay: 0.2s;
     }
 
-    .loader--dot:nth-child(5) {
+    .index-loader--dot:nth-child(5) {
       background-color: #60beeb;
       animation-delay: 0.1s;
     }
 
-    .loader--dot:nth-child(6) {
+    .index-loader--dot:nth-child(6) {
       background-color: #fbef5a;
       animation-delay: 0s;
     }
 
-    .loader--text {
+    .index-loader--text {
       position: absolute;
       top: 200%;
       left: 0;
@@ -98,7 +100,7 @@
       margin: auto;
     }
 
-    .loader--text:after {
+    .index-loader--text:after {
       content: "Loading";
       font-weight: bold;
       animation-name: loading-text;
@@ -106,7 +108,7 @@
       animation-iteration-count: infinite;
     }
 
-    @keyframes loader {
+    @keyframes index-loader {
       15% {
         transform: translateX(0);
       }
@@ -150,16 +152,16 @@
     <strong>We're sorry but my-project-vuecli doesn't work properly without JavaScript enabled. Please enable it to
       continue.</strong>
   </noscript>
-  <div class="loaders-container">
+  <div class="index-loaders-container">
     <div class='container'>
-      <div class='loader'>
-        <div class='loader--dot'></div>
-        <div class='loader--dot'></div>
-        <div class='loader--dot'></div>
-        <div class='loader--dot'></div>
-        <div class='loader--dot'></div>
-        <div class='loader--dot'></div>
-        <div class='loader--text'></div>
+      <div class='index-loader'>
+        <div class='index-loader--dot'></div>
+        <div class='index-loader--dot'></div>
+        <div class='index-loader--dot'></div>
+        <div class='index-loader--dot'></div>
+        <div class='index-loader--dot'></div>
+        <div class='index-loader--dot'></div>
+        <div class='index-loader--text'></div>
       </div>
     </div>
   </div>
@@ -167,8 +169,8 @@
   <!-- built files will be auto injected -->
 </body>
 <script>
-  const loaderEl = document.querySelector(".loaders-container")
-  loaderEl.className = "hidden loaders-container"
+  const loaderEl = document.querySelector(".index-loaders-container")
+  loaderEl.className = "hidden index-loaders-container"
 </script>
 
 </html>
