@@ -1,0 +1,40 @@
+{
+  "name": "standard",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://dreambo8563.github.io/bpit-vue",
+  "scripts": {
+    "serve": "vue-cli-service serve --open ",
+    "build": "vue-cli-service lint &&vue-cli-service build",
+    "dev-build": "vue-cli-service lint &&vue-cli-service build --mode development",
+    "staging-build": "vue-cli-service lint &&vue-cli-service build --mode staging",
+    "lint": "vue-cli-service lint",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.7",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-plugin-typescript": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-prettier": "^3.0.3",
+    "@vue/eslint-config-typescript": "^3.0.3",
+    "cz-conventional-changelog": "^2.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
