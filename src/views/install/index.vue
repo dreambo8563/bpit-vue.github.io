@@ -105,6 +105,6 @@ export default {
 </script>
 <style scoped>
 .install-page {
-  padding: 20px;
+  padding: 0 20px;
 }
 </style>
