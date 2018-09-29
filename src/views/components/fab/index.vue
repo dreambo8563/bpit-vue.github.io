@@ -2,7 +2,7 @@
 <template>
   <div class="fab-page">
     <el-collapse v-model="activeNames">
-      <el-collapse-item title="UI" name="1">
+      <el-collapse-item title="Show Code" name="1">
         <pre class="code-container language-javascript">
           <code>
             {{ jscode }}
@@ -67,26 +67,18 @@ export default {
 `,
       css: `
   .google {
-    -webkit-transition-delay: 100ms;
-    transition-delay: 60ms;
     background-image: url("https://cbwconline.com/IMG/Google%20Plus.svg");
     background-size: contain;
   }
   .twitter {
-    -webkit-transition-delay: 75ms;
-    transition-delay: 40ms;
     background-image: url("https://cbwconline.com/IMG/Twitter-Flat.png");
     background-size: contain;
   }
   .fb {
-    -webkit-transition-delay: 50ms;
-    transition-delay: 20ms;
     background-image: url("https://cbwconline.com/IMG/Facebook-Flat.png");
     background-size: contain;
   }
   .trigger {
-    -webkit-transition-delay: 25ms;
-    transition-delay: 25ms;
     background-image: url("https://cbwconline.com/IMG/Share.svg");
     background-size: contain;
   }
@@ -106,26 +98,18 @@ export default {
 
 <style scoped>
 .google {
-  -webkit-transition-delay: 100ms;
-  transition-delay: 60ms;
   background-image: url("https://cbwconline.com/IMG/Google%20Plus.svg");
   background-size: contain;
 }
 .twitter {
-  -webkit-transition-delay: 75ms;
-  transition-delay: 40ms;
   background-image: url("https://cbwconline.com/IMG/Twitter-Flat.png");
   background-size: contain;
 }
 .fb {
-  -webkit-transition-delay: 50ms;
-  transition-delay: 20ms;
   background-image: url("https://cbwconline.com/IMG/Facebook-Flat.png");
   background-size: contain;
 }
 .trigger {
-  -webkit-transition-delay: 25ms;
-  transition-delay: 25ms;
   background-image: url("https://cbwconline.com/IMG/Share.svg");
   background-size: contain;
 }

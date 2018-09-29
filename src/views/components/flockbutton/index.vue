@@ -2,10 +2,15 @@
 <template>
   <div class="flockbutton-page">
     <el-collapse v-model="activeNames">
-      <el-collapse-item title="UI" name="1">
+      <el-collapse-item title="Show Code" name="1">
+        <pre class="code-container language-javascript">
+          <code>
+            {{ jscode }}
+          </code>
+        </pre>
         <pre class="code-container language-markup">
           <code>
-            {{ code }}
+            {{code}}
           </code>
         </pre>
       </el-collapse-item>
@@ -37,7 +42,20 @@ export default {
     <FlockButton :invert="true">Submit</FlockButton>
     <FlockButton :loading="true">Submit</FlockButton>
     <FlockButton size="half">Submit</FlockButton>
-    <FlockButton size="full">Submit</FlockButton>`
+    <FlockButton size="full">Submit</FlockButton>`,
+      jscode: `
+    import { FlockButton } from "@bpit/vue";
+
+    export default {
+      data() {
+        return {
+        };
+      },
+      components: {
+        FlockButton
+      }
+    };
+    `
     };
   },
   components: {
