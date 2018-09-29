@@ -29,6 +29,12 @@ const router = new Router({
           components: {
             default: () => import("@/views/components/gradientbutton/index.vue")
           }
+        },
+        {
+          path: "hoveranimation",
+          components: {
+            default: () => import("@/views/directives/hoveranimation/index.vue")
+          }
         }
       ]
     },

@@ -1,11 +1,12 @@
 <template>
-    <el-row type="flex" justify="center">
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-            <el-menu-item index="/">Home</el-menu-item>
-            <el-menu-item index="/install">How to Install</el-menu-item>
-            <el-menu-item index="/components/flockbutton">Components</el-menu-item>
-        </el-menu>
-    </el-row>
+  <el-row type="flex" justify="center">
+    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+      <el-menu-item index="/">Home</el-menu-item>
+      <el-menu-item index="/install">How to Install</el-menu-item>
+      <el-menu-item index="/components/flockbutton">Components</el-menu-item>
+      <el-menu-item index="/author">About Author</el-menu-item>
+    </el-menu>
+  </el-row>
 </template>
 <script>
 export default {
