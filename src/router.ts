@@ -55,6 +55,12 @@ const router = new Router({
           components: {
             default: () => import("@/views/components/bouncingloader/index.vue")
           }
+        },
+        {
+          path: "donutspinner",
+          components: {
+            default: () => import("@/views/components/donutspinner/index.vue")
+          }
         }
       ]
     },

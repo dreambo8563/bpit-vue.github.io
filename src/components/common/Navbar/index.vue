@@ -23,6 +23,9 @@
             <el-menu-item @click="nav('/components/bouncingloader')" index="/components/bouncingloader">
               <span slot="title">BouncingLoader</span>
             </el-menu-item>
+            <el-menu-item @click="nav('/components/donutspinner')" index="/components/donutspinner">
+              <span slot="title">DonutSpinner</span>
+            </el-menu-item>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
