@@ -17,6 +17,9 @@
             <el-menu-item @click="nav('/components/gradientbutton')" index="/components/gradientbutton">
               <span slot="title">GradientButton</span>
             </el-menu-item>
+            <el-menu-item @click="nav('/components/transformcontainer')" index="/components/transformcontainer">
+              <span slot="title">TransformContainer</span>
+            </el-menu-item>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">

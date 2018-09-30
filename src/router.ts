@@ -35,6 +35,13 @@ const router = new Router({
           components: {
             default: () => import("@/views/directives/hoveranimation/index.vue")
           }
+        },
+        {
+          path: "transformcontainer",
+          components: {
+            default: () =>
+              import("@/views/components/transformcontainer/index.vue")
+          }
         }
       ]
     },
