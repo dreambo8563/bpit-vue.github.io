@@ -42,6 +42,13 @@ const router = new Router({
             default: () =>
               import("@/views/components/transformcontainer/index.vue")
           }
+        },
+        {
+          path: "hovermagicunderline",
+          components: {
+            default: () =>
+              import("@/views/directives/hovermagicunderline/index.vue")
+          }
         }
       ]
     },

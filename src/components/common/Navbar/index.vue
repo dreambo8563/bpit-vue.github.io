@@ -28,7 +28,11 @@
             <el-menu-item @click="nav('/components/hoveranimation')" index="/components/hoveranimation">
               <span slot="title">HoverAnimation</span>
             </el-menu-item>
+            <el-menu-item @click="nav('/components/hovermagicunderline')" index="/components/hovermagicunderline">
+              <span slot="title">HoverMagicUnderline</span>
+            </el-menu-item>
           </el-submenu>
+
         </el-menu>
       </el-col>
     </el-row>
