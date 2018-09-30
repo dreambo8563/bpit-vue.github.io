@@ -49,6 +49,12 @@ const router = new Router({
             default: () =>
               import("@/views/directives/hovermagicunderline/index.vue")
           }
+        },
+        {
+          path: "bouncingloader",
+          components: {
+            default: () => import("@/views/components/bouncingloader/index.vue")
+          }
         }
       ]
     },
