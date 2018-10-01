@@ -8,6 +8,7 @@ const router = new Router({
   routes: [
     { path: "/", component: () => import("@/views/index.vue") },
     { path: "/install", component: () => import("@/views/install/index.vue") },
+    { path: "/author", component: () => import("@/views/author/index.vue") },
     {
       path: "/components",
       component: () => import("@/layout/index.vue"),
