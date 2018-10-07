@@ -68,6 +68,12 @@ const router = new Router({
           components: {
             default: () => import("@/views/components/borderinput/index.vue")
           }
+        },
+        {
+          path: "labelinput",
+          components: {
+            default: () => import("@/views/components/labelinput/index.vue")
+          }
         }
       ]
     },

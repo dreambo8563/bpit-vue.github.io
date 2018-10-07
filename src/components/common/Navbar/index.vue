@@ -29,7 +29,9 @@
             <el-menu-item @click="nav('/components/borderinput')" index="/components/borderinput">
               <span slot="title">BorderInput</span>
             </el-menu-item>
-
+            <el-menu-item @click="nav('/components/labelinput')" index="/components/labelinput">
+              <span slot="title">LabelInput</span>
+            </el-menu-item>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">

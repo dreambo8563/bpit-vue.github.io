@@ -1,20 +1,22 @@
 
 <template>
-  <div class="borderinput-page">
+  <div class="labelinput-page">
     <div>
       <pre class="code-container language-javascript">
           <code>
-                import { BorderInput } from "@bpit/vue";
+                import { LabelInput } from "@bpit/vue";
           </code>
         </pre>
     </div>
+    <br>
+    <br>
     <el-row class="demo-container">
-      <BorderInput :effects="1"></BorderInput>
-      <BorderInput v-model="msg" :effects="2"></BorderInput>
-      <BorderInput :effects="3"></BorderInput>
-      <BorderInput :effects="4"></BorderInput>
-      <BorderInput :effects="5"></BorderInput>
-      <BorderInput :effects="6"></BorderInput>
+      <LabelInput v-model="msg" label="Name" :effects="1"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="2"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="3"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="4"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="5"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="6"></LabelInput>
     </el-row>
     <br>
     <el-collapse>
@@ -27,7 +29,7 @@
       </el-collapse-item>
     </el-collapse>
     <br>
-    <h2> BorderInput 属性:</h2>
+    <h2> LabelInput 属性:</h2>
     <el-table :data="tableData" style="width: 100%">
       <el-table-column prop="name" label="参数">
       </el-table-column>
@@ -44,23 +46,23 @@
 </template>
 <script>
 import Prism from "prismjs";
-import { BorderInput } from "@bpit/vue";
+import { LabelInput } from "@bpit/vue";
 export default {
   data() {
     return {
-      msg: "hello",
+      msg: "",
       tpl: `
-      <BorderInput :effects="1"></BorderInput>
-      <BorderInput v-model="msg" :effects="2"></BorderInput>
-      <BorderInput :effects="3"></BorderInput>
-      <BorderInput :effects="4"></BorderInput>
-      <BorderInput :effects="5"></BorderInput>
-      <BorderInput :effects="6"></BorderInput>
+      <LabelInput v-model="msg" label="Name" :effects="1"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="2"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="3"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="4"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="5"></LabelInput>
+      <LabelInput v-model="msg" label="Name" :effects="6"></LabelInput>
       `,
       tableData: [
         {
-          name: "placeholder",
-          desc: "占位字符",
+          name: "label",
+          desc: "label",
           type: "String",
           values: "-",
           default: "-"
@@ -90,7 +92,7 @@ export default {
     };
   },
   components: {
-    BorderInput
+    LabelInput
   },
   mounted() {
     Prism.highlightAll();
