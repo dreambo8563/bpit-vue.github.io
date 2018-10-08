@@ -74,6 +74,12 @@ const router = new Router({
           components: {
             default: () => import("@/views/components/labelinput/index.vue")
           }
+        },
+        {
+          path: "radiobutton",
+          components: {
+            default: () => import("@/views/components/radiobutton/index.vue")
+          }
         }
       ]
     },

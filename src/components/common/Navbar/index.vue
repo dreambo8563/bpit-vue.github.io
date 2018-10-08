@@ -32,6 +32,9 @@
             <el-menu-item @click="nav('/components/labelinput')" index="/components/labelinput">
               <span slot="title">LabelInput</span>
             </el-menu-item>
+            <el-menu-item @click="nav('/components/radiobutton')" index="/components/radiobutton">
+              <span slot="title">RadioButton</span>
+            </el-menu-item>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
