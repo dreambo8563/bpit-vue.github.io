@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-header>
+        <el-header :class="isCollapse?'mobileHeader':''">
             <headebar></headebar>
         </el-header>
         <el-container>
@@ -15,11 +15,21 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      isCollapse: true
+    };
+  },
   components: {
     navbar: () => import("@/components/common/Navbar/index.vue"),
     headebar: () => import("@/components/common/HeaderNav/index.vue")
+  },
+  mounted() {
+    if (window.innerWidth > 875) {
+      this.isCollapse = false;
+    }
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 </style>

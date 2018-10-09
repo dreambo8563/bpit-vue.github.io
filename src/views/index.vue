@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headebar></headebar>
+    <headebar :class="isCollapse?'mobileHeader':''" style="padding:0 20px"></headebar>
     <br>
     <br>
     <div class="main-center title">BPIT/VUE</div>
@@ -27,6 +27,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      isCollapse: window.innerWidth < 875
+    };
+  },
   components: {
     headebar: () => import("@/components/common/HeaderNav/index.vue")
   }

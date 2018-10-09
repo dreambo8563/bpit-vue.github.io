@@ -1,7 +1,7 @@
 
 <template>
   <div class="install-page">
-    <headebar></headebar>
+    <headebar :class="isCollapse?'mobileHeader':''"></headebar>
     <section>
       <h3>From npm</h3>
       <code>
@@ -73,6 +73,7 @@ import Prism from "prismjs";
 export default {
   data() {
     return {
+      isCollapse: window.innerWidth < 875,
       jscode: `
         export default {
           data() {

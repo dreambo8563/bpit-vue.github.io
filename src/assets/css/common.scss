@@ -155,3 +155,11 @@ pre[class*="language-"] {
     margin-bottom: 20px;
   }
 }
+
+.mobileHeader {
+  height: 100px !important;
+}
+.mobileHeader li.el-menu-item {
+  font-size: 12px;
+  height: 40px;
+}

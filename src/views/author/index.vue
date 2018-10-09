@@ -1,10 +1,10 @@
 
 <template>
   <div class="author-page">
-    <headebar></headebar>
+    <headebar :class="isCollapse?'mobileHeader':''" style="padding:0 20px"></headebar>
     <section class="main-content">
-      <el-row type="flex" align="middle">
-        <img class="avatar"  src="@assets/img/photo.png" alt="">
+      <el-row class="flexRow" type="flex" align="middle">
+        <img class="avatar" src="@assets/img/photo.png" alt="">
         <div style="margin-right:40px">
           <div class="name">
             Vincent Guo
@@ -22,7 +22,7 @@
             Habbits: Reading/Technology
           </div>
         </div>
-        <el-steps finish-status="success" style="flex:1" :active="3">
+        <el-steps class="stpesContainer" align-center finish-status="success" style="flex:1" :active="3">
           <el-step title="QA" description="QA Leader"></el-step>
           <el-step title="PM" description="Project Manager"></el-step>
           <el-step title="Developer" description="More Frontend/Less Backend"></el-step>
@@ -40,12 +40,12 @@
             <img src="@assets/img/redux.png" alt="">
             <img src="@assets/img/mobx.png" alt="">
             <img src="@assets/img/vue.png" alt="">
-            <img style="background:#337ab7"  src="@assets/img/ts.svg" alt="">
+            <img style="background:#337ab7" src="@assets/img/ts.svg" alt="">
             <img src="@assets/img/nuxt.png" alt="">
             <img style="background:#DC322F" src="@assets/img/scala.png" alt="">
             <img src="@assets/img/play.png" alt="">
             <img style="background:black" src="@assets/img/redis.png" alt="">
-            <img  src="@assets/img/mysql.svg" alt="">
+            <img src="@assets/img/mysql.svg" alt="">
             <svg style="    width: 150px;
     height: 60px;
     fill: #0091e2;" id="logoHorizontal" viewBox="-5.724 -43.601 2000 600" width="100%" height="100%">
@@ -136,20 +136,20 @@
               <path d="M416.312,228.909h63.073c3.047,0,5.521-2.46,5.538-5.507V167.22c0-3.059-2.479-5.538-5.538-5.538l0,0h-63.073
       c-3.041,0-5.507,2.466-5.507,5.507c0,0.01,0,0.021,0,0.031v56.181C410.805,226.443,413.271,228.909,416.312,228.909"></path>
             </svg>
-            <img  src="@assets/img/nginx.svg" alt="">
-            <img  src="@assets/img/go.svg" alt="">
+            <img src="@assets/img/nginx.svg" alt="">
+            <img src="@assets/img/go.svg" alt="">
             <div style="    font: 25px helvetica neue,open sans,sans-serif;
     font-weight: 100; margin-right: 15px
     color: #444;">
               Express
             </div>
-            <img  src="@assets/img/antdesign.svg" alt="Ant Design">
+            <img src="@assets/img/antdesign.svg" alt="Ant Design">
             <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjMwcHgiIGhlaWdodD0iMzBweCIgdmlld0JveD0iMCAwIDM4IDQ4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MCAoMzM3NjIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlNoYXBlIENvcHk8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0idjIuMi4wIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i6aaW6aG1Lem7mOiupOaViOaenC1jb3B5LTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MC4wMDAwMDAsIC0xOS4wMDAwMDApIiBmaWxsPSIjNDA5RUZGIj4KICAgICAgICAgICAgPHBhdGggZD0iTTIxMi4xMzU0NDEsNDUuMTU3ODA3NyBaIE0xMDMuNDE2NTAyLDQ2LjIxNzU1MTEgQzEwMy40MDcwMDgsNDcuNzk0NTY4MiAxMDIuNTg3ODQxLDQ4LjE0NjM0NzQgMTAyLjU4Nzg0MSw0OC4xNDYzNDc0IEMxMDIuNTg3ODQxLDQ4LjE0NjM0NzQgODguNDUyMDQ3OCw1Ni4zMTQ1MDg3IDg3LjUzMjk5NTYsNTYuODI2Mjc1MSBDODYuNjIyMzM2LDU3LjIxNzE1NjEgODYuMDEzNjcwMyw1Ni44MjYyNzUxIDg2LjAxMzY3MDMsNTYuODI2Mjc1MSBDODYuMDEzNjcwMyw1Ni44MjYyNzUxIDcxLjIyMjU3MDYsNDguMjQ3OTU3MiA3MC42ODI2OTYyLDQ3Ljg3MDg0NDQgQzcwLjE0MjY4NDMsNDcuNDkzNzMxNiA3MC4xMzAxNjQzLDQ2LjkwNjM3NzQgNzAuMTMwMTY0Myw0Ni45MDYzNzc0IEM3MC4xMzAxNjQzLDQ2LjkwNjM3NzQgNzAuMTQ1MDIzMiwyOS45MTk5MTc0IDcwLjEzMDE2NDMsMjkuMTMzMzM2NCBDNzAuMTE1MzA1MywyOC4zNDY2MTc3IDcxLjA5Njk1NzYsMjcuNzU1NTQ2MSA3MS4wOTY5NTc2LDI3Ljc1NTU0NjEgTDg1Ljg3NTUzNzMsMTkuMjEzNDM4NyBDODYuNzg1MzcxNCwxOC43MzMyMDE2IDg3LjY3MTEyODYsMTkuMjEzNDM4NyA4Ny42NzExMjg2LDE5LjIxMzQzODcgQzg3LjY3MTEyODYsMTkuMjEzNDM4NyAxMDAuNzI2NjIzLDI2LjgwMjA5MzcgMTAyLjE3MzQ0MiwyNy42MTc3MjU3IEMxMDMuNTkxNTA3LDI4LjI5MTk1NzcgMTAzLjQxNjUwMiwyOS42ODQzNDI0IDEwMy40MTY1MDIsMjkuNjg0MzQyNCBDMTAzLjQxNjUwMiwyOS42ODQzNDI0IDEwMy40MjUzMDcsNDQuNzUxOTE5MiAxMDMuNDE2NTAyLDQ2LjIxNzU1MTEgTDEwMy40MTY1MDIsNDYuMjE3NTUxMSBaIE05Ny41MTYwMTA1LDI5LjE2OTEzMzkgQzk0LjQ5MDAxNzMsMjcuNDI3NDQ4MyA4Ny4zNjE1ODQyLDIzLjI5NzEwNjMgODcuMzYxNTg0MiwyMy4yOTcxMDYzIEM4Ny4zNjE1ODQyLDIzLjI5NzEwNjMgODYuNjY2MTAzOSwyMi45MjEyMzI2IDg1Ljk1MTc3NDcsMjMuMjk3MTA2MyBMNzQuMzQ4NzQwNiwyOS45ODIxNSBDNzQuMzQ4NzQwNiwyOS45ODIxNSA3My41NzgwMDI1LDMwLjQ0NDkwMTQgNzMuNTg5Njk3LDMxLjA2MDQ4MDUgQzczLjYwMTM5MTUsMzEuNjc2MDU5NyA3My41ODk2OTcsNDQuOTY5ODcwOCA3My41ODk2OTcsNDQuOTY5ODcwOCBDNzMuNTg5Njk3LDQ0Ljk2OTg3MDggNzMuNTk5NDY1NCw0NS40Mjk1OTMyIDc0LjAyMzQ5NTEsNDUuNzI0NjQ3MiBDNzQuNDQ3Mzg3Myw0Ni4wMTk3MDExIDg2LjA2MDE4OTgsNTIuNzMzMjQ1MSA4Ni4wNjAxODk4LDUyLjczMzI0NTEgQzg2LjA2MDE4OTgsNTIuNzMzMjQ1MSA4Ni41MzgxNTIsNTMuMDM5MTc1OSA4Ny4yNTMwMzE1LDUyLjczMzI0NTEgQzg3Ljk3NDY1MjYsNTIuMzMyNzI2MiA5OS4wNzMwMzM1LDQ1Ljk0MDI1ODIgOTkuMDczMDMzNSw0NS45NDAyNTgyIEM5OS4wNzMwMzM1LDQ1Ljk0MDI1ODIgOTkuNzE2MjMyNSw0NS42NjQ4OTI5IDk5LjcyMzY2MTksNDQuNDMwNzA1NiBDOTkuNzI1NzI1Nyw0NC4wNzQ3OTU5IDk5LjcyNjU1MTIsNDIuNjkzMjg4MSA5OS43MjY2ODg3LDQwLjk1NzUyMjkgTDg2LjY2MDA1MDIsNDguODc1MjM5NCBMODYuNjYwMDUwMiw0NS44NDYyMjEgQzg2LjY2MDA1MDIsNDQuNjAyMTIwNSA4Ny42MjMxMjg5LDQzLjc4MDk4MTEgODcuNjIzMTI4OSw0My43ODA5ODExIEw5OS4xODA3NjA3LDM2LjgxNjU3OTMgQzk5LjYxNjg5NzgsMzYuMzYxMTI1MSA5OS43MDY4NzY4LDM1LjYzMTU0NDcgOTkuNzI1NDUwNSwzNS4zNTU2Mjg3IEM5OS43MjUwMzc4LDM0LjA5MDQ2MjcgOTkuNzI0NDg3NCwzMi45ODUyODQxIDk5LjcyNDA3NDcsMzIuMjg1MTY3OCBMODYuNjYwMDUwMiw0MC4yMDEyMzIxIEw4Ni42NjAwNTAyLDM3LjAzNDUzMSBDODYuNjYwMDUwMiwzNS43OTA0MzA1IDg3LjQ4NTU0NjIsMzUuMjQ0NjU2NCA4Ny40ODU1NDYyLDM1LjI0NDY1NjQgTDk3LjUxNjAxMDUsMjkuMTY5MTMzOSBaIiBpZD0iU2hhcGUtQ29weSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="ElementUI">
             <img style="background:black" src="@assets/img/echarts.png" alt="echarts">
             <img style="background:#609700" src="@assets/img/weixin.png" alt="Weixin">
             <img src="@assets/img/ding.png" alt="DingDing">
             <img src="@assets/img/xbox.png" alt="Xbox">
-    </div>
+          </div>
         </el-card>
       </el-row>
     </section>
@@ -157,6 +157,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      isCollapse: window.innerWidth < 875
+    };
+  },
   components: {
     headebar: () => import("@/components/common/HeaderNav/index.vue")
   }
@@ -170,13 +175,23 @@ export default {
     height: 180px;
     border-radius: 50%;
     margin-right: 40px;
+    @media (max-width: 875px) {
+      width: 100px;
+      height: 100px;
+    }
   }
   .name {
     font-weight: bold;
     font-size: 32px;
+    @media (max-width: 875px) {
+      font-size: 20px;
+    }
   }
   .profile-item {
     font-size: 18px;
+    @media (max-width: 875px) {
+      font-size: 12px;
+    }
   }
   .skill-container {
     display: flex;
@@ -186,6 +201,17 @@ export default {
       margin-bottom: 10px;
       height: 60px;
       border-radius: 10px;
+    }
+  }
+  .flexRow {
+    @media (max-width: 875px) {
+      flex-wrap: wrap;
+    }
+  }
+  .stpesContainer {
+    @media (max-width: 875px) {
+      margin-top: 20px;
+      width: 100%;
     }
   }
 }

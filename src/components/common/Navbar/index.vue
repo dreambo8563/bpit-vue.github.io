@@ -65,17 +65,6 @@ export default {
     nav(url) {
       this.$router.push(url);
       this.checkMobile();
-      const open = (this.$refs["menu"].openedMenus = []);
-      // this.$refs["menu"].isMenuPopup = false
-      // console.log(this.$refs["menu"].openedMenus[0], this.$refs["menu"].openedMenus)
-      // if (open != undefined) {
-      //   this.$refs["menu"].close(open)
-
-      // }
-      this.$nextTick(function() {
-        this.$refs["menu"].openedMenus = [];
-      });
-      console.log(this.$refs["menu"]);
     },
     checkMobile() {
       if (window.innerWidth > 875) {
