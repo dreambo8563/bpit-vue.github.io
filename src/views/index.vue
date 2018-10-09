@@ -2,25 +2,27 @@
   <div>
     <headebar></headebar>
     <br>
+    <br>
     <div class="main-center title">BPIT/VUE</div>
     <br>
+    <br>
     <section class="main-logo main-center">
-      <img width="200" src="https://cli.vuejs.org/favicon.png" alt="">
-        </section>
-      <section class="main-content">
-        <h4> What is bpit/vue?</h4>
-        <p><i>bpit/vue</i> is not a component UI kit, we didn't have the consistent theme for these components, it's just a collection of effects components. <br></p>
-          <p>bpit/vue is a good place for beginners to learn <b>How to create their UI Kits</b>. Now, it's just a showcase of the effects I can gather from the Internet (codepen, github...) and transfered to vue `things`</p>
-          <br>
-          <h4>What we focus?</h4>
-          <p>We focus on the effects of these components other than functionailties. That's why it's not a ui kit.</p>
-          <p>We take more time on css part and hope to make it more general and easy to use, so we encapsulate them into vue component/directives.</p>
-          <br>
-          <h4>Why we need it?</h4>
-          <p>There are so many resources on the Internet, we can make use of them to save time and to be more efficient. <i>bpit/vue</i> collects them, encapsulates them, imporves them. </p>
-          <u>Install easy</u> && <u>Import on demand</u> && <u>Everything in one place</u>
-      </section>
+      <img width="200" src="@assets/img/logo.png" alt="">
+    </section>
+    <section class="main-content">
+      <h4> What is bpit/vue?</h4>
+      <p><i>bpit/vue</i> is not a component UI kit, we didn't have the consistent theme for these components, it's just a collection of effects components. <br></p>
+      <p>bpit/vue is a good place for beginners to learn <b>How to create their UI Kits</b>. Now, it's just a showcase of the effects I can gather from the Internet (codepen, github...) and transfered to vue `things`</p>
       <br>
+      <h4>What we focus?</h4>
+      <p>We focus on the effects of these components other than functionailties. That's why it's not a ui kit.</p>
+      <p>We take more time on css part and hope to make it more general and easy to use, so we encapsulate them into vue component/directives.</p>
+      <br>
+      <h4>Why we need it?</h4>
+      <p>There are so many resources on the Internet, we can make use of them to save time and to be more efficient. <i>bpit/vue</i> collects them, encapsulates them, imporves them. </p>
+      <u>Install easy</u> && <u>Import on demand</u> && <u>Everything in one place</u>
+    </section>
+    <br>
   </div>
 </template>
 <script>
