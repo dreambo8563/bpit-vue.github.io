@@ -80,6 +80,12 @@ const router = new Router({
           components: {
             default: () => import("@/views/components/radiobutton/index.vue")
           }
+        },
+        {
+          path: "switchbutton",
+          components: {
+            default: () => import("@/views/components/switchbutton/index.vue")
+          }
         }
       ]
     },

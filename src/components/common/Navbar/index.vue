@@ -36,6 +36,9 @@
             <el-menu-item index="/components/radiobutton">
               <span slot="title">RadioButton</span>
             </el-menu-item>
+            <el-menu-item index="/components/switchbutton">
+              <span slot="title">SwitchButton</span>
+            </el-menu-item>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
