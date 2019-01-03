@@ -3,7 +3,13 @@
   <div class="Navbar-page">
     <el-row>
       <el-col>
-        <el-menu ref="menu" menu-trigger="click" :default-active="$route.path" :collapse="isCollapse" :router="true">
+        <el-menu
+          ref="menu"
+          menu-trigger="click"
+          :default-active="$route.path"
+          :collapse="isCollapse"
+          :router="true"
+        >
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-menu"></i>
@@ -50,6 +56,9 @@
             </el-menu-item>
             <el-menu-item index="/components/hovermagicunderline">
               <span slot="title">HoverMagicUnderline</span>
+            </el-menu-item>
+            <el-menu-item index="/components/waves">
+              <span slot="title">Waves</span>
             </el-menu-item>
           </el-submenu>
         </el-menu>

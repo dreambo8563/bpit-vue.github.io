@@ -52,6 +52,12 @@ const router = new Router({
           }
         },
         {
+          path: "waves",
+          components: {
+            default: () => import("@/views/directives/waves/index.vue")
+          }
+        },
+        {
           path: "bouncingloader",
           components: {
             default: () => import("@/views/components/bouncingloader/index.vue")
