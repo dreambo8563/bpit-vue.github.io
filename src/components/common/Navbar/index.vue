@@ -60,6 +60,9 @@
             <el-menu-item index="/components/waves">
               <span slot="title">Waves</span>
             </el-menu-item>
+            <el-menu-item index="/components/bubbling">
+              <span slot="title">Bubbling</span>
+            </el-menu-item>
           </el-submenu>
         </el-menu>
       </el-col>

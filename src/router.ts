@@ -58,6 +58,12 @@ const router = new Router({
           }
         },
         {
+          path: "bubbling",
+          components: {
+            default: () => import("@/views/directives/bubbling/index.vue")
+          }
+        },
+        {
           path: "bouncingloader",
           components: {
             default: () => import("@/views/components/bouncingloader/index.vue")
