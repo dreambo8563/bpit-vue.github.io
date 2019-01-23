@@ -1,5 +1,7 @@
 # standard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dreambo8563/bpit-vue.github.io.svg)](https://greenkeeper.io/)
+
 ## Project setup
 ```
 npm install
