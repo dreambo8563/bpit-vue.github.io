@@ -9,7 +9,8 @@
     "dev-build": "vue-cli-service lint &&vue-cli-service build --mode development",
     "staging-build": "vue-cli-service lint &&vue-cli-service build --mode staging",
     "lint": "vue-cli-service lint",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "test": "npm run build"
   },
   "dependencies": {
     "@bpit/vue": "^0.1.30",
