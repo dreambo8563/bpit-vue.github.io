@@ -3,12 +3,6 @@
   <div class="filters-page">
     <headebar :class="isCollapse?'mobileHeader':''"></headebar>
     <section>
-      <h3>From npm</h3>
-      <code>npm install @bpit/vue --save</code>
-    </section>
-    <br>
-    <hr>
-    <section>
       <el-collapse accordion>
         <el-collapse-item title="Placeholder">
           <div>
