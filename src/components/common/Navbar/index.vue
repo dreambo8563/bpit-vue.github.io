@@ -10,7 +10,7 @@
           :collapse="isCollapse"
           :router="true"
         >
-          <el-submenu index="1">
+          <el-submenu :show-timeout="100" :hideTimeout="300" index="1">
             <template slot="title">
               <i class="el-icon-menu"></i>
               <span>Components</span>
@@ -84,12 +84,17 @@ export default {
     checkMobile() {
       if (window.innerWidth > 875) {
         this.isCollapse = false;
+      } else {
+        this.isCollapse = true;
       }
     }
   },
   mounted() {
-    // console.log("object")
     this.checkMobile();
+    window.addEventListener("resize", this.checkMobile);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.checkMobile);
   }
 };
 </script>
