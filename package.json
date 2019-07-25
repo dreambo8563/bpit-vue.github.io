@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@bpit/vue": "^0.1.30",
-    "element-ui": "^2.4.7",
+    "element-ui": "^2.11.0",
     "prismjs": "^1.15.0",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
