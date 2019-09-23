@@ -28,7 +28,7 @@
     "@vue/cli-service": "^3.0.3",
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/eslint-config-typescript": "^3.0.3",
-    "babel-plugin-import": "^1.9.1",
+    "babel-plugin-import": "^1.12.2",
     "cz-conventional-changelog": "^2.1.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
